@@ -3,31 +3,50 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --primary-dark: #5651e5;
+    --primary-light: #709dff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.icon {
+    color: var(--primary-dark);
+}
+
+@layer base {
+    li {
+        @apply p-4
+    }
+
+    h1 {
+        @apply text-3xl md:text-4xl font-bold
+    }
+
+    h2 {
+        @apply text-3xl font-bold
+    }
+
+    h3 {
+        @apply text-xl font-bold
+    }
+
+    button {
+        @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md
+    }
+
+    .icon {
+        @apply text-2xl cursor-pointer
+    }
+}
+
+.embla {
+    overflow: hidden;
   }
+
+.embla__container {
+    display: flex;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+  
