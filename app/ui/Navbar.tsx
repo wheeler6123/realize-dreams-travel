@@ -6,6 +6,7 @@ import { BiSearch } from "react-icons/bi"
 import { AiOutlineClose } from "react-icons/ai"
 import { HiOutlineMenuAlt4 } from "react-icons/hi"
 import { FaFacebook, FaTwitter, FaInstagram, FaPinterest, FaYoutube } from "react-icons/fa"
+import ThemeSwitch from "./components/ThemeSwitch";
 
 export default function Navbar(): JSX.Element {
     const [nav, setNav] = useState(false);
@@ -17,7 +18,7 @@ export default function Navbar(): JSX.Element {
     }
 
     return (
-        <div className="flex justify-between items-center h-20 px-4">
+        <div className="flex justify-between items-center h-20 px-4 w-full absolute z-10 text-white">
             <div>
                 <h1 className={logo ? 'hidden' : 'block'}>REALIZE DREAMS</h1>
             </div>
@@ -28,16 +29,20 @@ export default function Navbar(): JSX.Element {
                 <li>View</li>
                 <li>Book</li>
             </ul>
-            <div className="hidden md:flex">
+            <div className="hidden md:flex gap-2">
+                <ThemeSwitch />
                 <BiSearch size={20} />
                 <BsPerson size={20} />
             </div>
             {/* Mobile Nav Hamburger */}
-            <div onClick={handleNav} className="md:hidden z-10">
-                {nav ? <AiOutlineClose size={20} /> : <HiOutlineMenuAlt4 size={20} />}
+            <div className={nav ? "md:hidden z-10 flex items-center gap-2 text-black" : "md:hidden z-10 flex items-center gap-2"}>
+                <ThemeSwitch />
+                <div onClick={handleNav}>
+                    {nav ? <AiOutlineClose size={20} color="black"/> : <HiOutlineMenuAlt4 size={20}/>}
+                </div>
             </div>
             {/* Mobile Nav Dropdown Menu */}
-            <div onClick={handleNav} className={nav ? 'absolute left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%] top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col'}>
+            <div onClick={handleNav} className={nav ? 'absolute text-black left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%] top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col'}>
                 <ul className="flex flex-col">
                     <h1>REALIZE DREAMS</h1>
                     <li className="border-b-2">Home</li>
