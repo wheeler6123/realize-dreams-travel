@@ -7,14 +7,14 @@ import maldives from '@/public/images/maldives.jpg';
 import maldives2 from '@/public/images/maldives2.jpg';
 import maldives3 from '@/public/images/maldives3.jpg';
 
-interface SliderData {
+export interface ISliderData {
     id: number;
     title: string;
     alt: string;
     src: StaticImageData;
 }
 
-const sliderData: SliderData[] = [
+const sliderData: ISliderData[] = [
     {
         id: 1,
         title: 'Bora Bora',

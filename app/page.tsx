@@ -4,6 +4,8 @@ import Hero from './ui/Hero';
 import SearchForm from "./ui/components/SearchForm";
 import Destinations from "./ui/Destinations";
 import Search from "./ui/Search";
+import Selects from "./ui/Selects";
+import YtSlider from "./ui/components/YtSlider";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
         <Hero />
         <Destinations />
         <Search />
+        <Selects />
+        <YtSlider />
     </main>
   );
 }
