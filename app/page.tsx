@@ -16,7 +16,6 @@ export default function Home() {
         <Destinations />
         <Search />
         <Selects />
-        <YtSlider />
         <Footer />
     </main>
   );
