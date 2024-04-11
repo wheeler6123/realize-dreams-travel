@@ -4,7 +4,6 @@ import { useState } from "react";
 import sliderData from "@/app/lib/sliderData"
 import Image from 'next/image';
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from 'react-icons/bs';
-import { set } from "mongoose";
 
 export default function YtSlider() {
     const [slide, setSlide] = useState(0);
