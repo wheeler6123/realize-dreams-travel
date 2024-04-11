@@ -23,11 +23,11 @@ export default function Navbar(): JSX.Element {
                 <h1 className={logo ? 'hidden' : 'block'}>REALIZE DREAMS</h1>
             </div>
             <ul className="hidden md:flex">
-                <li>Home</li>
-                <li>Destinations</li>
-                <li>Travel</li>
-                <li>View</li>
-                <li>Book</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#book">Book</a></li>
+                <li><a href="#view">View</a></li>
             </ul>
             <div className="hidden md:flex gap-2">
                 <ThemeSwitch />

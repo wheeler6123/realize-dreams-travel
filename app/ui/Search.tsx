@@ -3,7 +3,7 @@ import { MdOutlineTravelExplore } from "react-icons/md";
 
 export default function Search() {
     return (
-        <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16">
+        <div id="book" className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16">
             <div className="lg:col-span-2 flex flex-col justify-evenly">
                 <div>
                     <h2>THE FINEST LUXURY VACATIONS</h2>

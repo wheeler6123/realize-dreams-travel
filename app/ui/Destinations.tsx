@@ -8,7 +8,7 @@ import sunsetcruise1 from '@/public/images/sunsetcruise1.webp';
 
 export default function Destinations() {
     return (
-        <div className="max-w-[1240px] mx-auto py-16 px-4 text-center">
+        <div id='travel' className="max-w-[1240px] mx-auto py-16 px-4 text-center">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             <h1>The World's Hottest Travel Destinations</h1>
             {/* eslint-disable-next-line react/no-unescaped-entities */}
