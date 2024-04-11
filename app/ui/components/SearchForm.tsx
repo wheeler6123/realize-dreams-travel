@@ -11,7 +11,7 @@ export default function SearchForm() {
                     <input className="bg-transparent w-[300px] sm:w-[400px] focus:outline-none" type="text" placeholder="Search Destinations" />
                 </div>
                 <div>
-                    <button><AiOutlineSearch size={20} className="icon" style={{color: '#ffffff'}}/></button>
+                    <div className="button"><AiOutlineSearch size={20} className="icon" style={{color: '#ffffff'}}/></div>
                 </div>
             </form>
         </div>

@@ -60,8 +60,8 @@ export default function Navbar(): JSX.Element {
             </div>
             {/* Mobile Nav Dropdown Menu */}
             <div onClick={handleNav} className={nav ? 'absolute text-black left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%] top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col'}>
+                <h1>REALIZE DREAMS</h1>
                 <ul className="flex flex-col">
-                    <h1>REALIZE DREAMS</h1>
                     <li className="border-b-2 border-gray-300"><a href="/">Home</a></li>
                     <li className="border-b-2 border-gray-300"><a href="#destinations">Destinations</a></li>
                     <li className="border-b-2 border-gray-300"><a href="#travel">Travel</a></li>
@@ -69,8 +69,8 @@ export default function Navbar(): JSX.Element {
                     <li className="border-b-2 border-gray-300"><a href="#view">View</a></li>
                 </ul>
                 <div className="flex flex-col">
-                    <button className="my-4">Search</button>
-                    <button>Account</button>
+                    <button className="my-4" id="search" >Search</button>
+                    <button id="account">Account</button>
                 </div>
                 <div className="flex justify-between my-6">
                     <FaFacebook className="icon" />

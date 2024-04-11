@@ -11,14 +11,14 @@ export default function Search() {
                 </div>
                 <div className="grid sm:grid-cols-2 gap-8 py-4">
                     <div className="flex flex-col lg:flex-row items-center text-center">
-                        <button><RiCustomerService2Fill size={50} /></button>
+                        <div className="button"><RiCustomerService2Fill size={50} /></div>
                         <div>
                             <h3 className="py-2">LEADING SERVICE</h3>
                             <p className="p-1">HIGHLY-TRAINED EXPERIENCED AGENTS</p>
                         </div>
                     </div>
                     <div className="flex flex-col lg:flex-row items-center text-center">
-                        <button><MdOutlineTravelExplore size={50} /></button>
+                        <div className="button"><MdOutlineTravelExplore size={50} /></div>
                         <div>
                             <h3 className="py-2">CUSTOM EXCURSIONS</h3>
                             <p className="p-1">TAILORED ITINERARIES FOR YOU</p>
@@ -35,7 +35,7 @@ export default function Search() {
                 <form className="w-full">
                     <div className="flex flex-col my-2">
                         <label htmlFor="destination">Destination</label>
-                        <select className="border rounded-md p-2" name="destination">
+                        <select id="destination" className="border rounded-md p-2" name="destination">
                             <option value="grand-cayman">Grand Cayman</option>
                             <option value="mexico">Mexico</option>
                             <option value="aspen">Aspen</option>
@@ -45,13 +45,13 @@ export default function Search() {
                     </div>
                     <div className="flex flex-col my-4">
                         <label htmlFor="check-in">Check-In</label>
-                        <input className="border rounded-md p-2" type="date" />
+                        <input id='check-in' className="border rounded-md p-2" type="date" />
                     </div>
                     <div className="flex flex-col my-2">
                         <label htmlFor="check-out">Check-Out</label>
-                        <input className="border rounded-md p-2" type="date" />
+                        <input id="check-out" className="border rounded-md p-2" type="date" />
                     </div>
-                    <button className="my-4 w-full">Rates & Availabilities</button>
+                    <button id='rates-and-availabilities-lookup' className="my-4 w-full">Rates & Availabilities</button>
                 </form>
             </div>
         </div>
