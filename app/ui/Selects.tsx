@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import destinationsData from '../lib/destinationsData';
 import SelectsCard from './components/SelectsCard';
 

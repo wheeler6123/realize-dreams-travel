@@ -1,13 +1,13 @@
 import { StaticImageData } from 'next/image';
-import dubainight1 from '@/public/images/dubainight1.webp';
-import londonbridge from '@/public/images/londonbridge.webp';
-import mediterranean from '@/public/images/mediterranean.webp';
-import eveningpool from '@/public/images/eveningpool.webp';
-import yacht1 from '@/public/images/yacht1.webp';
-import keywest from '@/public/images/keywest.webp';
-import switzerland from '@/public/images/switzerland.webp';
-import nyc from '@/public/images/nyc.webp';
-import cabo from '@/public/images/cabo.webp';
+import dubainight1 from '../../public/images/dubainight1.webp';
+import londonbridge from '../../public/images/londonbridge.webp';
+import mediterranean from '../../public/images/mediterranean.webp';
+import eveningpool from '../../public/images/eveningpool.webp';
+import yacht1 from '../../public/images/yacht1.webp';
+import keywest from '../../public/images/keywest.webp';
+import switzerland from '../../public/images/switzerland.webp';
+import nyc from '../../public/images/nyc.webp';
+import cabo from '../../public/images/cabo.webp';
 
 
 export interface ISliderData {
