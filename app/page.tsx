@@ -6,6 +6,7 @@ import Destinations from "./ui/Destinations";
 import Search from "./ui/Search";
 import Selects from "./ui/Selects";
 import YtSlider from "./ui/components/YtSlider";
+import Footer from "./ui/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Search />
         <Selects />
         <YtSlider />
+        <Footer />
     </main>
   );
 }
