@@ -10,10 +10,10 @@ export default function Carousel() {
 
     return (
         <div
-            className="overflow-hidden bg-gray-200 w-full mx-auto flex items-center justify-center h-auto z-0"
+            className="bg-gray-200 w-full mx-auto flex items-center justify-center h-full z-0"
             ref={emblaRef}
         >
-            <div className="flex">
+            <div className="flex h-full">
                 {sliderData?.map((item) => {
                     return (
                     <div className="embla__slide relative h-full w-full" key={item.id}>
