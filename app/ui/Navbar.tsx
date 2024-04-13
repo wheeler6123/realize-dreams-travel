@@ -35,7 +35,7 @@ export default function Navbar(): JSX.Element {
     }, [scrolled]);
 
     return (
-        <div className={`flex fixed top-0 justify-between items-center h-20 px-4 w-full md:absolute z-10 text-white ${scrolled ? 'bg-slate-500/80' : ''}`}>
+        <div className={`flex fixed top-0 justify-between items-center h-20 px-4 w-full md:absolute z-20 text-white ${scrolled ? 'bg-slate-500/80' : ''}`}>
             <div>
                 <a href="/"><h1 className={logo ? 'hidden' : 'block'}>REALIZE DREAMS</h1></a>
             </div>
@@ -52,7 +52,7 @@ export default function Navbar(): JSX.Element {
                 <BsPerson size={20} />
             </div>
             {/* Mobile Nav Hamburger */}
-            <div className={nav ? "md:hidden z-10 flex items-center gap-2 text-black" : "md:hidden z-10 flex items-center gap-2"}>
+            <div className={nav ? "md:hidden z-20 flex items-center gap-2 text-black" : "md:hidden z-20 flex items-center gap-2"}>
                 <ThemeSwitch />
                 <div onClick={handleNav}>
                     {nav ? <AiOutlineClose size={20} color="black"/> : <HiOutlineMenuAlt4 size={20}/>}

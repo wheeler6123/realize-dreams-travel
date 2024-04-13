@@ -10,7 +10,7 @@ export default function Carousel() {
 
     return (
         <div
-            className="overflow-hidden bg-gray-200 w-full mx-auto flex items-center justify-center h-auto lg:h-screen z-0"
+            className="overflow-hidden bg-gray-200 w-full mx-auto flex items-center justify-center h-auto z-0"
             ref={emblaRef}
         >
             <div className="flex">
