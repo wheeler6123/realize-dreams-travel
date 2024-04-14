@@ -29,7 +29,10 @@ export default function Footer() {
                         <li><a href="/#book">Book</a></li>
                         <li><a href="/about">About</a></li>
                     </ul>  
-                </div>                
+                </div>  
+                <div className="w-full text-center">
+                    <p>&copy; 2024 Realize Dreams. All rights reserved. Website built by <a className="text-blue-900" href="https://www.johnwheelerdev.com">John Wheeler Dev</a></p>  
+                </div>              
             </div>
         </div>
     )
