@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import Hero from '@/app/ui/components/travelPage/Hero'
+import Hero from '@/app/ui/components/aboutPage/Hero'
 
 export default function TravelPage() {
   return (

@@ -7,6 +7,12 @@
     --primary-light: #709dff;
 }
 
+[data-theme='dark'],
+[data-theme='dark'] body {
+  color: #fff;
+  background-color: #282c34;
+}
+
 .icon {
     color: var(--primary-dark);
 }

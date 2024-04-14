@@ -22,12 +22,12 @@ export default function Footer() {
                         <li>Newsroom</li>
                         <li>Advertising</li>
                     </ul>  
-                    <ul className='lg:flex text-right'>
-                        <li>Home</li>
-                        <li>Destinations</li>
-                        <li>Travel</li>
-                        <li>View</li>
-                        <li>Book</li>    
+                    <ul className='lg:flex text-right cursor-pointer'>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/destinations">Destinations</a></li>
+                        <li><a href="/travel">Travel</a></li>
+                        <li><a href="/#book">Book</a></li>
+                        <li><a href="/about">About</a></li>
                     </ul>  
                 </div>                
             </div>

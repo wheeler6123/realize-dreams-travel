@@ -37,14 +37,14 @@ export default function Navbar(): JSX.Element {
     return (
         <div className={`flex fixed top-0 justify-between items-center h-20 px-4 w-full md:absolute z-10 text-white ${scrolled ? 'bg-slate-500/80' : ''}`}>
             <div>
-                <h1 className={logo ? 'hidden' : 'block'}>REALIZE DREAMS</h1>
+                <a href="/"><h1 className={logo ? 'hidden' : 'block'}>REALIZE DREAMS</h1></a>
             </div>
             <ul className="hidden md:flex">
                 <li><a href="/">Home</a></li>
                 <li><a href="/destinations">Destinations</a></li>
-                <li><a href="#travel">Travel</a></li>
-                <li><a href="#book">Book</a></li>
-                <li><a href="#view">View</a></li>
+                <li><a href="/travel">Travel</a></li>
+                <li><a href="/#book">Book</a></li>
+                <li><a href="/about">About</a></li>
             </ul>
             <div className="hidden md:flex gap-2">
                 <ThemeSwitch />
@@ -60,13 +60,13 @@ export default function Navbar(): JSX.Element {
             </div>
             {/* Mobile Nav Dropdown Menu */}
             <div onClick={handleNav} className={nav ? 'absolute text-black left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%] top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col'}>
-                <h1>REALIZE DREAMS</h1>
+                <a href="/"><h1>REALIZE DREAMS</h1></a>
                 <ul className="flex flex-col">
                     <li className="border-b-2 border-gray-300"><a href="/">Home</a></li>
                     <li className="border-b-2 border-gray-300"><a href="/destinations">Destinations</a></li>
-                    <li className="border-b-2 border-gray-300"><a href="#travel">Travel</a></li>
-                    <li className="border-b-2 border-gray-300"><a href="#book">Book</a></li>
-                    <li className="border-b-2 border-gray-300"><a href="#view">View</a></li>
+                    <li className="border-b-2 border-gray-300"><a href="/travel">Travel</a></li>
+                    <li className="border-b-2 border-gray-300"><a href="/#book">Book</a></li>
+                    <li className="border-b-2 border-gray-300"><a href="/about">About Us</a></li>
                 </ul>
                 <div className="flex flex-col">
                     <button className="my-4" id="search" >Search</button>
