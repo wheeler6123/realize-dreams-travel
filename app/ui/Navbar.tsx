@@ -41,7 +41,7 @@ export default function Navbar(): JSX.Element {
             </div>
             <ul className="hidden md:flex">
                 <li><a href="/">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="/destinations">Destinations</a></li>
                 <li><a href="#travel">Travel</a></li>
                 <li><a href="#book">Book</a></li>
                 <li><a href="#view">View</a></li>
@@ -63,7 +63,7 @@ export default function Navbar(): JSX.Element {
                 <h1>REALIZE DREAMS</h1>
                 <ul className="flex flex-col">
                     <li className="border-b-2 border-gray-300"><a href="/">Home</a></li>
-                    <li className="border-b-2 border-gray-300"><a href="#destinations">Destinations</a></li>
+                    <li className="border-b-2 border-gray-300"><a href="/destinations">Destinations</a></li>
                     <li className="border-b-2 border-gray-300"><a href="#travel">Travel</a></li>
                     <li className="border-b-2 border-gray-300"><a href="#book">Book</a></li>
                     <li className="border-b-2 border-gray-300"><a href="#view">View</a></li>

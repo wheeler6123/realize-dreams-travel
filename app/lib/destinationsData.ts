@@ -2,7 +2,7 @@ import { StaticImageData } from 'next/image';
 import dubainight1 from '../../public/images/dubainight1.webp';
 import londonbridge from '../../public/images/londonbridge.webp';
 import mediterranean from '../../public/images/mediterranean.webp';
-import eveningpool from '../../public/images/eveningpool.webp';
+import indonesia1 from '../../public/images/indonesia1.webp';
 import yacht1 from '../../public/images/yacht1.webp';
 import keywest from '../../public/images/keywest.webp';
 import switzerland from '../../public/images/switzerland.webp';
@@ -38,13 +38,13 @@ const destinationsData: ISliderData[] = [
     },
     {
         id: 4,
-        title: 'Private Villas',
-        alt: 'a beautiful pool at a private villa',
-        src: eveningpool,
+        title: 'Indonesia',
+        alt: 'a beautiful pool at a luxury resort in Indonesia',
+        src: indonesia1,
     },
     {
         id: 5,
-        title: 'Yacht Charters',
+        title: 'Caribbean',
         alt: 'a photo of a luxury yacht',
         src: yacht1,
     },
