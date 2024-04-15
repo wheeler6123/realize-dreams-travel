@@ -38,6 +38,10 @@
         @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md
     }
 
+    button > span {
+      @apply p-0 m-0 items-center bg-transparent
+    }
+
     .button {
       @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md
     }
@@ -59,6 +63,23 @@
     flex: 0 0 100%;
     min-width: 0;
     object-fit: cover;
+}
+
+#account-icon, #search-icon {
+  background: transparent;
+  padding: 0;
+  border: none;
+  margin: 0 4px;
+  height: 20px;
+  width: 20px;
+}
+
+#account-icon:focus, #search-icon:focus {
+  outline: none !important;
+}
+
+#account-button:focus, #search-button:focus {
+  outline: none !important;
 }
 
 /* Font files */
