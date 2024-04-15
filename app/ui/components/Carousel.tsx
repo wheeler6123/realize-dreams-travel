@@ -25,7 +25,7 @@ export default function Carousel() {
                         <div className="absolute top-0 left-0 w-full h-full bg-gray-900/25"></div>
         
                         {/* title/subtitle */}
-                        <h1 className="absolute left-1/4 top-2/3 w-full md:w-auto py-2 lg:py-4 px-2 lg:px-8 text-2xl md:text-4xl lg:text-6xl text-white font-extrabold">
+                        <h1 className="absolute left-1/4 top-2/3 w-full md:w-auto py-2 lg:py-4 px-2 lg:px-8 text-xl md:text-4xl lg:text-6xl text-white font-extrabold">
                         {item.title}
                         </h1>
                     </div>
