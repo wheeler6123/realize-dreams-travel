@@ -1,12 +1,14 @@
 'use client';
 
 import React, { useState, useEffect } from "react"
-import { BsPerson } from "react-icons/bs"
-import { BiSearch } from "react-icons/bi"
 import { AiOutlineClose } from "react-icons/ai"
 import { HiOutlineMenuAlt4 } from "react-icons/hi"
 import { FaFacebook, FaTwitter, FaInstagram, FaPinterest, FaYoutube } from "react-icons/fa"
 import ThemeSwitch from "./components/ThemeSwitch";
+import AccountIconModal from "./components/AccountIconModal";
+import AccountButtonModal from "./components/AccountButtonModal";
+import SearchIconModal from "./components/SearchIconModal";
+import SearchButtonModal from "./components/SearchButtonModal";
 
 export default function Navbar(): JSX.Element {
     const [nav, setNav] = useState(false);
@@ -46,10 +48,10 @@ export default function Navbar(): JSX.Element {
                 <li><a href="/#book">Book</a></li>
                 <li><a href="/about">About</a></li>
             </ul>
-            <div className="hidden md:flex gap-2">
+            <div className="hidden md:flex gap-2 justify-center text-center">
                 <ThemeSwitch />
-                <BiSearch size={20} />
-                <BsPerson size={20} />
+                <SearchIconModal />
+                <AccountIconModal />
             </div>
             {/* Mobile Nav Hamburger */}
             <div className={nav ? "md:hidden z-20 flex items-center gap-2 text-black" : "md:hidden z-20 flex items-center gap-2"}>
@@ -68,9 +70,9 @@ export default function Navbar(): JSX.Element {
                     <li className="border-b-2 border-gray-300"><a href="/#book">Book</a></li>
                     <li className="border-b-2 border-gray-300"><a href="/about">About Us</a></li>
                 </ul>
-                <div className="flex flex-col">
-                    <button className="my-4" id="search" >Search</button>
-                    <button id="account">Account</button>
+                <div className="flex flex-col gap-2 my-2">
+                    <SearchButtonModal />
+                    <AccountButtonModal />
                 </div>
                 <div className="flex justify-between my-6">
                     <FaFacebook className="icon" />
